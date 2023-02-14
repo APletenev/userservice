@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:h2:tcp://localhost:1521/votes
+    url: jdbc:h2:tcp://users_db:1521/votes
     username: sa
     password:
     driverClassName: org.h2.Driver
