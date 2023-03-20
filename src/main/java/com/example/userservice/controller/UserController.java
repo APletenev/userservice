@@ -33,4 +33,14 @@ public class UserController {
     public Optional<User> byUserId(@PathVariable Long id) {
         return userService.getUserById(id);
     }
+
+    /**
+     * Get user by email
+     * @param email User email
+     * @return User if email has been found. Null if requested email is not exists.
+     */
+    @GetMapping("/email/{email}")
+    public Optional<User> byUserEmail(@PathVariable String email) {
+        return userService.getUserByEmail(email);
+    }
 }
